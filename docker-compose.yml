@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: nginx-test
+    ports:
+      - "80:80"
